@@ -1,0 +1,8 @@
+source "https://rubygems.org"
+gem "capybara-webkit"
+gem "rake"
+gem "rspec"
+gem "database_cleaner"
+gem "launchy"
+gem "pry"
+gem "pry-debugger"
