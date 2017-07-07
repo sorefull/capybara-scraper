@@ -4,23 +4,21 @@ require "bundler/setup"
 require "capybara"
 require "capybara/dsl"
 require "capybara-webkit"
-require "pry"
 
 Capybara.run_server = false
 Capybara.current_driver = :webkit
-Capybara.app_host = "http://www.google.com/"
+Capybara.app_host = "http://www.foreveryoungapartments.com"
 
 module Test
   class Google
     include Capybara::DSL
 
     def get_results
-      visit('/')
-      fill_in "q", :with => "Capybara"
-      click_button "Google Search"
-#      binding.pry
-      all(:xpath, "//li[@class='g']/h3/a").each { |a| puts a[:href] }
-
+      visit('/alquiler/estudio-madrid-ciudad-forever-young-apartments-zurbano-182210.html')
+      button = find '#more-rates-button'
+      table = find '#rates-table'
+      3.times { button.click }
+      # table growed catched by #text from table
     end
   end
 end

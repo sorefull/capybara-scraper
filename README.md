@@ -1,6 +1,5 @@
-capybara-scraper
-================
+# Capybara Scraper
 
-An example of how to scrape Google results using the ruby capybara gem.
+Did it for doing ajax requests while scrapping booking availability.
 
-Credit to http://www.chadcf.com/blog/using-capybara-javascript-capable-replacement-mechanize
+[link to native extentions instruction](https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit#ubuntu-trusty-1404)
