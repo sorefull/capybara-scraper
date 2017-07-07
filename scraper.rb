@@ -10,7 +10,7 @@ Capybara.current_driver = :webkit
 Capybara.app_host = "http://www.foreveryoungapartments.com"
 
 module Test
-  class Google
+  class Foreveryoungapartments
     include Capybara::DSL
 
     def get_results
@@ -23,5 +23,5 @@ module Test
   end
 end
 
-spider = Test::Google.new
+spider = Test::Foreveryoungapartments.new
 spider.get_results
